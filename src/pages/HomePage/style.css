@@ -1,0 +1,22 @@
+.screen {
+    height: 100vh;
+    position: relative;
+}
+
+.start-game-button .Typewriter {
+    font-size: 1.7rem;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.start-game-button {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem 4rem;
+    background: #ffe200;
+    border-radius: 1rem;
+    min-width: 19rem;
+    border: 1px solid orange;
+}
