@@ -1,0 +1,18 @@
+.paragraph-wrapper {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+.paragraph-container {
+    display: flex;
+    height: 5rem;
+    width: 38rem;
+    border: 1px solid;
+    overflow: hidden;
+    align-items: center;
+}
+.paragraph-container > span {
+    white-space: nowrap;
+}
