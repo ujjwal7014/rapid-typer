@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ParagraphBox from '../../components/ParagraphBox/ParagraphBox'
 
 export default function GameArena() {
   const [paragraph, setParagraph] = useState()
+  const [userTypedText, setUserTypedText] = useState()
 
-  let demoArr = [
-    {
-      para1: "ujjwal is agreat guy"
-    }
-  ]
+  useEffect(() => {
+    let fetchedParagraph = {para : "ujjwal is a great guy"}
+    setParagraph(fetchedParagraph.para)
+  }, [])
 
   return (
     <div>
       <ParagraphBox
-        pargraph={paragraph || demoArr}
+        pargraph={paragraph || {}}
         userTypedText={userTypedText || ''}
       />
     </div>

@@ -2,11 +2,10 @@ import './style.css';
 import React from 'react'
 
 export default function ParagraphBox(paragraph, userTypedText) {
-  const random = Math.floor(Math.random() * paragraph.length);
-  console.log(random, paragraph[random][0]);
 
   return (
     <div className='paragraph-container'>
+      <h1>hey</h1>
       <span>{paragraph}</span>
     </div>
   )
