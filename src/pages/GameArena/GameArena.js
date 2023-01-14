@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ParagraphBox from '../../components/ParagraphBox/ParagraphBox'
+import Timer from './Timer/Timer'
 
 export default function GameArena() {
   const fetchedParagraph = {
@@ -13,7 +14,8 @@ export default function GameArena() {
   }, [])
 
   return (
-    <div>
+    <div className='Arena'>
+      <Timer initialMinute={0} initialSecond={60} />
       <ParagraphBox
         paragraph={paragraph || ''}
         userTypedText={userTypedText || ''}

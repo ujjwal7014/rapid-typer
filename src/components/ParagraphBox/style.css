@@ -9,9 +9,11 @@
     display: flex;
     height: 5rem;
     width: 38rem;
-    border: 1px solid;
+    border: 5px solid yellow;
     overflow: hidden;
     align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    padding-inline: 4px;
 }
 .paragraph-container > span {
     white-space: nowrap;
